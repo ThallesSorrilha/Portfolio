@@ -1,3 +1,11 @@
+body {
+  background: #313131;
+  font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  /*margin: 0;
+  padding: 0;*/
+}
+
 .img-personal {
   border-radius: 50%;
   width: 150px;
@@ -5,5 +13,19 @@
 }
 
 .img-card {
-  height: 400px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.bi-github,
+.bi-linkedin,
+.bi-envelope-fill {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: #ffffff;
 }
