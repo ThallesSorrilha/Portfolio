@@ -1,9 +1,13 @@
 body {
   background: #313131;
-  font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
-  /*margin: 0;
-  padding: 0;*/
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin: 15px;
+}
+
+p {
+  font-size: 18px;
 }
 
 .img-personal {
@@ -13,7 +17,8 @@ body {
 }
 
 .img-card {
-  height: 300px;
+  max-height: 300px;
+  max-width: 300px;
   border-radius: 5px;
 }
 
