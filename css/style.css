@@ -1,0 +1,121 @@
+body {
+  background: #313131;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.img-personal {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.img-card {
+  max-height: 300px;
+  max-width: 300px; /*355px*/
+  border-radius: 5px;
+}
+
+/*.img-card-project img {
+  justify-content: center;
+}*/
+
+.bi {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  transition-duration: 0.4s;
+}
+
+.bi-github {
+  color: #6e40c9;
+}
+
+.bi-linkedin {
+  color: #0077b5;
+}
+
+.bi-envelope-fill {
+  color: #d93025;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.button {
+  border: none;
+  padding: 12px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+.button:hover {
+  i {
+    color: #ffffff;
+    transition-duration: 0.4s;
+  }
+}
+
+.button:active {
+  i {
+    color: #c9c9c9;
+    transition-duration: 0.4s;
+  }
+}
+
+.button1 {
+  border: 1px solid #d93025;
+}
+
+.button1:hover {
+  background-color: #d93025;
+}
+
+.button1:active {
+  background-color: #b1271d;
+  border: 1px solid #b1271d;
+}
+
+.button2 {
+  border: 1px solid #0077b5;
+}
+
+.button2:hover {
+  background-color: #0077b5;
+}
+
+.button2:active {
+  background-color: #005e93;
+  border: 1px solid #005e93;
+}
+
+.button3 {
+  border: 1px solid #6e40c9;
+}
+
+.button3:hover {
+  background-color: #6e40c9;
+}
+
+.button3:active {
+  background-color: #532e9f;
+  border: 1px solid #532e9f;
+}
