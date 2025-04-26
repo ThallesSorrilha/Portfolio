@@ -1,0 +1,18 @@
+:root {
+  --bg-color: #313131;
+  --font-color: #ffffff;
+  --button-br: rgba(0, 0, 0, 0);
+  --email-color: #d93025;
+  --email-active-color: #b1271d;
+  --github-color: #6e40c9;
+  --github-active-color: #532e9f;
+  --linkedin-color: #0077b5;
+  --linkedin-active-color: #005e93;
+  --icon-hover-color: #ffffff;
+  --icon-active-color: #c9c9c9;
+}
+
+/*[data-theme="light"] {
+  --bg-color: #ffffff;
+  --font-color: #000000;
+}*/
