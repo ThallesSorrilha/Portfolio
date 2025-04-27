@@ -10,36 +10,43 @@
 </head>
 
 <body>
-    <!-- Cabeçalho -->
+
+    <!-- Menu de Navegação -->
     <header>
-        <img class="img-personal" src="img/eu_quadrado.jpeg" alt="thalles">
-        <h1>Thalles Sorrilha Meira Barros</h1>
+
     </header>
 
     <main>
 
-        <div class="pai">
-            <div class="filho"></div>
-        </div>
+        <!-- Credenciais -->
+        <section class="credentials">
+            <div class="div-center">
+                <img class="img-personal" src="img/eu_quadrado.jpeg" alt="thalles">
+            </div>
+            <div class="div-center">
+                <h1 class="my-name">Thalles Sorrilha</h1>
+            </div>
+        </section>
 
         <!-- Contato -->
         <section class="contact">
-
-            <a class="button button1" href="mailto:thallessorrilha@gmail.com">
-                <i class="bi bi-envelope-fill"></i>
-            </a>
-            <a class="button button2" href="https://www.linkedin.com/in/thalles-sorrilha-meira-barros-945436321/"
-                target="_blank">
-                <i class="bi bi-linkedin"></i>
-            </a>
-            <a class="button button3" href="https://github.com/ThallesSorrilha" target="_blank">
-                <i class="bi bi-github"></i>
-            </a>
+            <div class="div-buttons">
+                <a class="button button1" href="mailto:thallessorrilha@gmail.com">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a class="button button2" href="https://www.linkedin.com/in/thalles-sorrilha-meira-barros-945436321/"
+                    target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="button button3" href="https://github.com/ThallesSorrilha" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
         </section>
 
         <!-- Introdução sobre mim -->
         <section class="introduction">
-            <h1>Sobre mim</h1>
+            <h2>Sobre mim</h2>
             <p>Sou Thalles, tenho 22 anos, moro em Paranavaí e estou cursando
                 Engenharia de Software (3º ano) pelo IFPR. Tenho experiência
                 em desenvolvimento para Desktop, WEB, Banco de Dados, Mobile e Microcontroladores.</p>
@@ -47,51 +54,51 @@
 
         <!-- Projetos Relevantes -->
         <section class="github_projects">
-            <h2>Projetos no GitHub</h1>
+            <h2>Projetos no GitHub</h2>
 
-                <div class="card_project">
-                    <h3>Protótipo de Jogo em C++ com biblioteca SDL</h3>
-                    <div class="div-img">
-                        <img class="img-card" src="img/game_dev.png" alt="game_dev">
-                    </div>
-                    <p>Protótipo de Jogo RPG com visão top-down. Este jogo foi programado em C++ utilizando a
-                        biblioteca SDL2, que facilita o uso de sons, imagens e controles. Este protótipo foi
-                        desenvolvido como parte do projeto “Gamedev” do IFPR de Paranavaí. Neste jogo, você
-                        controla um personagem pelo mapa, e com sua espada, você pode atacar os inimigos que
-                        aparecem. (2024 - 2025)</p>
-                    <p>Link pro projeto: <a href="https://github.com/ThallesSorrilha/SDL_Tutorial">Protótipo de
-                            Jogo</a>
-                    </p>
+            <div class="card_project">
+                <h3>* Protótipo de Jogo em C++ com biblioteca SDL</h3>
+                <div class="div-img">
+                    <img class="img-card" src="img/game_dev.png" alt="game_dev">
                 </div>
+                <p>Protótipo de Jogo RPG com visão top-down. Este jogo foi programado em C++ utilizando a
+                    biblioteca SDL2, que facilita o uso de sons, imagens e controles. Este protótipo foi
+                    desenvolvido como parte do projeto “Gamedev” do IFPR de Paranavaí. Neste jogo, você
+                    controla um personagem pelo mapa, e com sua espada, você pode atacar os inimigos que
+                    aparecem. (2024 - 2025)</p>
+                <p>Link pro projeto: <a href="https://github.com/ThallesSorrilha/SDL_Tutorial">Protótipo de
+                        Jogo</a>
+                </p>
+            </div>
 
-                <div class="card_project">
-                    <h3>Simulador de Processador em C</h3>
-                    <p>Este projeto foi desenvolvido durante o curso de Engenharia de Software, na matéria de
-                        “Arquitetura de Computadores”, cujo objetivo era simular um processador monociclo e um
-                        outro Pipeline. (2024)</p>
-                    <p>Link pro projeto: <a href="https://github.com/ThallesSorrilha/Simulador_de_Processador">Simulador
-                            de
-                            Processador</a>
-                    </p>
-                </div>
+            <div class="card_project">
+                <h3>* Simulador de Processador em C</h3>
+                <p>Este projeto foi desenvolvido durante o curso de Engenharia de Software, na matéria de
+                    “Arquitetura de Computadores”, cujo objetivo era simular um processador monociclo e um
+                    outro Pipeline. (2024)</p>
+                <p>Link pro projeto: <a href="https://github.com/ThallesSorrilha/Simulador_de_Processador">Simulador
+                        de
+                        Processador</a>
+                </p>
+            </div>
 
-                <div class="card_project">
-                    <h3>Site “PokeTrader” com uso de API, PHP e banco de dados MySQL</h3>
-                    <div class="div-img">
-                        <img class="img-card" src="img/pokemon.png" alt="PokeTrader">
-                    </div>
-                    <p>Este site foi desenvolvido no curso “Técnico em Informática” durante a disciplina de
-                        “Programação WEB”. Neste projeto, foram usadas as 3 linguagens padrão para sites: HTML,
-                        CSS e Java Script, além do uso de PHP em conjunto com um banco de dados MySQL para
-                        tornar o conteúdo do site dinâmico. O objetivo do site é servir como um trocador de
-                        Pokémons, em que um usuário (com conta criada) recebe um pokémon a cada dia que entra no
-                        site, além de poder trocar os seus pokémons com o de outro usuário. Dessa forma,
-                        atraindo a atenção do usuário que pode colecionar os seus monstros e buscar outros
-                        usuários para trocar. (2022)</p>
-                    <p>Link pro projeto: <a href="https://github.com/ThallesSorrilha/Projeto_PokeTrader">Projeto
-                            PokéTrader</a>
-                    </p>
+            <div class="card_project">
+                <h3>* Site “PokeTrader” com uso de API, PHP e banco de dados MySQL</h3>
+                <div class="div-img">
+                    <img class="img-card" src="img/pokemon.png" alt="PokeTrader">
                 </div>
+                <p>Este site foi desenvolvido no curso “Técnico em Informática” durante a disciplina de
+                    “Programação WEB”. Neste projeto, foram usadas as 3 linguagens padrão para sites: HTML,
+                    CSS e Java Script, além do uso de PHP em conjunto com um banco de dados MySQL para
+                    tornar o conteúdo do site dinâmico. O objetivo do site é servir como um trocador de
+                    Pokémons, em que um usuário (com conta criada) recebe um pokémon a cada dia que entra no
+                    site, além de poder trocar os seus pokémons com o de outro usuário. Dessa forma,
+                    atraindo a atenção do usuário que pode colecionar os seus monstros e buscar outros
+                    usuários para trocar. (2022)</p>
+                <p>Link pro projeto: <a href="https://github.com/ThallesSorrilha/Projeto_PokeTrader">Projeto
+                        PokéTrader</a>
+                </p>
+            </div>
 
         </section>
 
@@ -100,7 +107,7 @@
             <h2>Projetos de Ensino</h2>
 
             <div class="card_project">
-                <h3>Monitor em Curso de Arduino</h3>
+                <h3>* Monitor em Curso de Arduino</h3>
                 <p>Em 2022 fui bolsista de um projeto que tinha como objetivo ministrar um curso de Arduino,
                     microcontrolador de circuitos eletrônicos. Este curso foi ofertado aos alunos de
                     Informática do IFPR Paranavaí, e incluiu de minha parte preparar o material didático,
@@ -109,7 +116,7 @@
             </div>
 
             <div class="card_project">
-                <h3>Tutor de Informática no Instituto Maurício Gehlen</h3>
+                <h3>* Tutor de Informática no Instituto Maurício Gehlen</h3>
                 <div class="div-img">
                     <img class="img-card" src="img/gehlen.jpeg" alt="Instrutor_Informatica">
                 </div>
@@ -127,50 +134,50 @@
 
         <!-- Habilidades -->
         <section class="skills">
-            <h2>Habilidades</h1>
-                <h3>Desktop</h3>
-                <img class="icon" src="img/icons/C.svg" alt="C">
-                <img class="icon" src="img/icons/CPP.svg" alt="CPP">
-                <img class="icon" src="img/icons/Java.svg" alt="Java">
-                <img class="icon" src="img/icons/Python.svg" alt="Python">
+            <h2>Habilidades</h2>
+            <h3>Desktop</h3>
+            <img class="icon" src="img/icons/C.svg" alt="C">
+            <img class="icon" src="img/icons/CPP.svg" alt="CPP">
+            <img class="icon" src="img/icons/Java.svg" alt="Java">
+            <img class="icon" src="img/icons/Python.svg" alt="Python">
 
-                <h3>WEB</h3>
-                <h4>Front-end</h4>
-                <img class="icon" src="img/icons/CSS.svg" alt="CSS">
-                <img class="icon" src="img/icons/HTML.svg" alt="HTML">
-                <img class="icon" src="img/icons/JavaScript.svg" alt="JavaScript">
-                <img class="icon" src="img/icons/React.svg" alt="React">
-                <h4>Back-end</h4>
-                <img class="icon" src="img/icons/PHP.svg" alt="PHP">
+            <h3>WEB</h3>
+            <h4>Front-end</h4>
+            <img class="icon" src="img/icons/CSS.svg" alt="CSS">
+            <img class="icon" src="img/icons/HTML.svg" alt="HTML">
+            <img class="icon" src="img/icons/JavaScript.svg" alt="JavaScript">
+            <img class="icon" src="img/icons/React.svg" alt="React">
+            <h4>Back-end</h4>
+            <img class="icon" src="img/icons/PHP.svg" alt="PHP">
 
-                <h3>Banco de Dados</h3>
-                <img class="icon" src="img/icons/MySQL.svg" alt="MySQL">
-                <img class="icon" src="img/icons/PostgreSQL.svg" alt="PostgreSQL">
-                <h3>Mobile</h3>
-                <img class="icon" src="img/icons/Dart.svg" alt="Dart">
-                <img class="icon" src="img/icons/Flutter.svg" alt="Flutter">
+            <h3>Banco de Dados</h3>
+            <img class="icon" src="img/icons/MySQL.svg" alt="MySQL">
+            <img class="icon" src="img/icons/PostgreSQL.svg" alt="PostgreSQL">
+            <h3>Mobile</h3>
+            <img class="icon" src="img/icons/Dart.svg" alt="Dart">
+            <img class="icon" src="img/icons/Flutter.svg" alt="Flutter">
 
-                <h3>Microcontroladores</h3>
-                <img class="icon" src="img/icons/Arduino.svg" alt="Arduino">
+            <h3>Microcontroladores</h3>
+            <img class="icon" src="img/icons/Arduino.svg" alt="Arduino">
 
-                <h3>Gerenciamento de código</h3>
-                <img class="icon" src="img/icons/Git.svg" alt="Git">
-                <img class="icon" src="img/icons/Github.svg" alt="Github">
+            <h3>Gerenciamento de código</h3>
+            <img class="icon" src="img/icons/Git.svg" alt="Git">
+            <img class="icon" src="img/icons/Github.svg" alt="Github">
 
-                <h3>IDEs</h3>
-                <img class="icon" src="img/icons/VSCode.svg" alt="VSCode">
+            <h3>IDEs</h3>
+            <img class="icon" src="img/icons/VSCode.svg" alt="VSCode">
 
-                <h3>Prototipação</h3>
-                <img class="icon" src="img/icons/Figma.svg" alt="Figma">
+            <h3>Prototipação</h3>
+            <img class="icon" src="img/icons/Figma.svg" alt="Figma">
 
         </section>
 
         <!-- Educação -->
         <section class="education">
-            <h2>Educação</h1>
-                <p>Ensino Médio Completo - IFPR Paranavaí (2022)</p>
-                <p>Técnico em Informática - IFPR Paranavaí (2022)</p>
-                <p>Cursando... Engenharia de Software pelo IFPR Paranavaí (3º ano /4)</p>
+            <h2>Educação</h2>
+            <p>* Ensino Médio Completo - IFPR Paranavaí (2022)</p>
+            <p>* Técnico em Informática - IFPR Paranavaí (2022)</p>
+            <p>* Cursando... Engenharia de Software pelo IFPR Paranavaí (3º ano /4)</p>
         </section>
 
     </main>
