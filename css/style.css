@@ -236,3 +236,20 @@ h2 {
 .icon-dark-light {
   color: var(--bt-dark-light-details);
 }
+
+@media screen and (min-width: 768px) {
+  .img-card {
+    max-height: 600px;
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    margin-left: 125px;
+    margin-right: 125px;
+  }
+  .bt-dark-light {
+    right: 139px;
+  }
+}
