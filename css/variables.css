@@ -1,6 +1,10 @@
 :root {
   --bg-color: #313131;
   --font-color: #ffffff;
+  --p-color: ;
+  --header-color: #1a1a1a;
+  --footer-color: #121212;
+  --link-color: #6495ed;
   --button-br: rgba(0, 0, 0, 0);
   --email-color: #d93025;
   --email-active-color: #b1271d;

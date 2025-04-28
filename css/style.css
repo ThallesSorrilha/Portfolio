@@ -85,7 +85,7 @@ h2 {
 }
 
 .link-default {
-  color: cornflowerblue;
+  color: var(--link-color);
 }
 
 .button {
@@ -176,7 +176,7 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  background-color: #121212;
+  background-color: var(--footer-color);
   margin-bottom: 60px;
 }
 
@@ -190,7 +190,7 @@ h2 {
   bottom: 0;
   left: 0;
   z-index: 1000;
-  background-color: #1a1a1a;
+  background-color: var(--header-color);
 }
 
 .list {
@@ -202,17 +202,19 @@ h2 {
   height: 38px;
 }
 
-.nav-icon {
-  color: #ffffff;
-  font-size: 32px;
-}
-
 .avatar {
   padding-top: 20px;
 }
 
 .nav-icon {
   padding: 8px 16px;
-  color: #ffffff;
+  color: var(--font-color);
+  font-size: 32px;
+}
+
+.dark-light {
+  position: absolute;
+  right: 14px;
+  top: 14px;
   font-size: 32px;
 }
