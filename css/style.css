@@ -17,7 +17,7 @@ main {
 }
 
 p {
-  color: #f0f0f0 !important;
+  color: var(--p-color) !important;
   font-size: 18px;
   margin-top: 4px;
   margin-bottom: 0px;
@@ -208,7 +208,7 @@ h2 {
 
 .nav-icon {
   padding: 8px 16px;
-  color: var(--font-color);
+  color: var(--p-color);
   font-size: 32px;
 }
 
