@@ -1,10 +1,4 @@
 :root {
-  --bg-color: #313131;
-  --font-color: #ffffff;
-  --p-color: #f0f0f0;
-  --header-color: #1a1a1a;
-  --footer-color: #121212;
-  --link-color: #6495ed;
   --button-br: rgba(0, 0, 0, 0);
   --email-color: #d93025;
   --email-active-color: #b1271d;
@@ -14,7 +8,15 @@
   --linkedin-active-color: #005e93;
   --icon-hover-color: #ffffff;
   --icon-active-color: #c9c9c9;
+}
 
+[data-theme="dark"] {
+  --bg-color: #313131;
+  --font-color: #ffffff;
+  --p-color: #f0f0f0;
+  --header-color: #1a1a1a;
+  --footer-color: #121212;
+  --link-color: #6495ed;
   --bt-dark-light-bg-color: var(--button-br);
   --bt-dark-light-details: #ffffff;
 }
@@ -26,7 +28,6 @@
   --header-color: #cacaca;
   --footer-color: #959595;
   --link-color: #008b8b;
-
   --bt-dark-light-bg-color: var(--button-br);
   --bt-dark-light-details: #313131;
 }
