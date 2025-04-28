@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body data-theme="dark">
 
     <!-- Menu de Navegação -->
     <header class="header">
@@ -35,9 +35,11 @@
 
         <!-- Credenciais -->
         <section class="avatar" id="avatar">
-            <div class="div-img">
+            <button class="bt-change-theme bt-dark-light" id="bt-change-theme" onclick="changeTheme()">
+                <i class="bi bi-sun-fill icon-dark-light" id="icon-dark-light"></i>
+            </button>
+            <div class="div-center">
                 <img class="img-personal" src="img/thalles2.jpg" alt="thalles">
-                <i class="bi-mask dark-light" id="dark-light"></i>
             </div>
             <div class="div-center">
                 <h1 class="my-name">Thalles Sorrilha</h1>
@@ -211,6 +213,8 @@
     <footer class="footer">
         <p class="footer-description">© 2025. Portfólio desenvolvido sem fins lucrativos</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

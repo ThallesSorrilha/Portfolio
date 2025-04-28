@@ -14,9 +14,19 @@
   --linkedin-active-color: #005e93;
   --icon-hover-color: #ffffff;
   --icon-active-color: #c9c9c9;
+
+  --bt-dark-light-bg-color: var(--button-br);
+  --bt-dark-light-details: #ffffff;
 }
 
-/*[data-theme="light"] {
-  --bg-color: #ffffff;
+[data-theme="light"] {
+  --bg-color: #f3f3f3;
   --font-color: #000000;
-}*/
+  --p-color: #121212;
+  --header-color: #cacaca;
+  --footer-color: #959595;
+  --link-color: #008b8b;
+
+  --bt-dark-light-bg-color: var(--button-br);
+  --bt-dark-light-details: #313131;
+}

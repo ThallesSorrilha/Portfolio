@@ -10,6 +10,7 @@ body {
   color: var(--font-color);
   font-family: Roboto, Arial, sans-serif;
   margin: 0px;
+  transition-duration: 0.4s;
 }
 
 main {
@@ -191,6 +192,7 @@ h2 {
   left: 0;
   z-index: 1000;
   background-color: var(--header-color);
+  transition-duration: 0.4s;
 }
 
 .list {
@@ -210,11 +212,27 @@ h2 {
   padding: 8px 16px;
   color: var(--p-color);
   font-size: 32px;
+  transition-duration: 0.4s;
 }
 
-.dark-light {
+.bt-dark-light {
   position: absolute;
   right: 14px;
   top: 14px;
-  font-size: 32px;
+
+  border: 1px solid var(--bt-dark-light-details);
+  padding: 5px 6px 2px 6px;
+  size: 50px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--bt-dark-light-bg-color);
+  border-radius: 12px;
+  min-height: 24px;
+}
+
+.icon-dark-light {
+  color: var(--bt-dark-light-details);
 }
