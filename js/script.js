@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   const localTheme = localStorage.getItem("theme");
   if (localTheme != null) {
-    updateBody(localTheme);
-    updateIcon(localTheme);
+    updateTheme(localTheme);
   }
 });
 
@@ -12,8 +11,7 @@ function changeTheme() {
 
   localStorage.setItem("theme", newTheme);
 
-  updateBody(newTheme);
-  updateIcon(newTheme);
+  updateTheme(newTheme);
 }
 
 function updateBody(theme) {
@@ -27,3 +25,9 @@ function updateIcon(theme) {
       ? "bi bi-sun-fill icon-dark-light"
       : "bi bi-moon-fill icon-dark-light";
 }
+
+function updateTheme(theme) {
+  updateBody(theme);
+  updateIcon(theme);
+}
+
