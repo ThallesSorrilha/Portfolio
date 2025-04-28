@@ -48,11 +48,10 @@ async function fetchGitHubStats() {
 }
 
 function displayGitHubStats(data) {
-  const statsSection = document.getElementById("api");
+  const statsSection = document.getElementById("div-git-general");
   statsSection.innerHTML = `
-      <h3>Geral</h3>
-      <p>👤 Nome: ${data.name}</p>
-      <p>📂 Repositórios Públicos: ${data.public_repos}</p>
+      <p>Nome: ${data.name}</p>
+      <p>Repositórios Públicos: ${data.public_repos}</p>
     `;
 }
 
@@ -72,8 +71,8 @@ async function fetchRepos() {
       )
       .join("");
     document.getElementById(
-      "api"
-    ).innerHTML += `<h3>Repositórios</h3> <ul>${reposList}</ul>`;
+      "div-git-repos"
+    ).innerHTML += `<ul>${reposList}</ul>`;
   } catch (error) {
     console.error("Erro ao buscar repositórios:", error);
   }
