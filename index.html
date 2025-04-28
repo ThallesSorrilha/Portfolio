@@ -12,14 +12,30 @@
 <body>
 
     <!-- Menu de Navegação -->
-    <header>
-
+    <header class="header">
+        <nav class="menu">
+            <ul class="list">
+                <!-- Avatar -->
+                <li class="nav-li"><a class="nav-link" href="#avatar"><i class="nav-icon bi-person-circle"
+                            aria-label="Eu"></i></a></li>
+                <!-- Proj. Github -->
+                <li class="nav-li"><a class="nav-link" href="#github_projects"><i
+                            class="nav-icon bi-code-square"></i></a></li>
+                <!-- Habilidades -->
+                <li class="nav-li"><a class="nav-link" href="#skills"><i class="nav-icon bi-tools"></i></a></li>
+                <!-- Educação -->
+                <li class="nav-li"><a class="nav-link" href="#schooling"><i class="nav-icon bi-mortarboard"></i></a>
+                </li>
+                <!-- Aplicação API -->
+                <li class="nav-li"><a class="nav-link" href="#api"><i class="nav-icon bi-github"></i></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
         <!-- Credenciais -->
-        <section class="credentials">
+        <section class="avatar" id="avatar">
             <div class="div-center">
                 <img class="img-personal" src="img/thalles2.jpg" alt="thalles">
             </div>
@@ -29,17 +45,17 @@
         </section>
 
         <!-- Contato -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="div-buttons">
                 <a class="button button1" href="mailto:thallessorrilha@gmail.com">
-                    <i class="bi bi-envelope-fill"></i>
+                    <i class="bi bi-envelope-fill envelope-fill"></i>
                 </a>
                 <a class="button button2" href="https://www.linkedin.com/in/thalles-sorrilha-meira-barros-945436321/"
                     target="_blank">
-                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-linkedin linkedin"></i>
                 </a>
                 <a class="button button3" href="https://github.com/ThallesSorrilha" target="_blank">
-                    <i class="bi bi-github"></i>
+                    <i class="bi bi-github github"></i>
                 </a>
             </div>
         </section>
@@ -54,9 +70,8 @@
         </section>
 
         <!-- Projetos Relevantes -->
-        <section class="github_projects">
+        <section class="github_projects" id="github_projects">
             <h2>🐈‍⬛ Projetos no GitHub</h2>
-
             <div class="card_project">
                 <h3>Protótipo de Jogo em C++ com biblioteca SDL 🕹️</h3>
                 <div class="div-img">
@@ -67,7 +82,8 @@
                     desenvolvido como parte do projeto “Gamedev” do IFPR de Paranavaí. Neste jogo, você
                     controla um personagem pelo mapa, e com sua espada, você pode atacar os inimigos que
                     aparecem. (2024 - 2025)</p>
-                <p>Link pro projeto: <a href="https://github.com/ThallesSorrilha/SDL_Tutorial">Protótipo de
+                <p>Link pro projeto: <a class="link-default"
+                        href="https://github.com/ThallesSorrilha/SDL_Tutorial">Protótipo de
                         Jogo</a>
                 </p>
             </div>
@@ -77,7 +93,8 @@
                 <p>Este projeto foi desenvolvido durante o curso de Engenharia de Software, na matéria de
                     “Arquitetura de Computadores”, cujo objetivo era simular um processador monociclo e um
                     outro Pipeline. (2024)</p>
-                <p>Link pro projeto: <a href="https://github.com/ThallesSorrilha/Simulador_de_Processador">Simulador
+                <p>Link pro projeto: <a class="link-default"
+                        href="https://github.com/ThallesSorrilha/Simulador_de_Processador">Simulador
                         de
                         Processador</a>
                 </p>
@@ -96,7 +113,8 @@
                     site, além de poder trocar os seus pokémons com o de outro usuário. Dessa forma,
                     atraindo a atenção do usuário que pode colecionar os seus monstros e buscar outros
                     usuários para trocar. (2022)</p>
-                <p>Link pro projeto: <a href="https://github.com/ThallesSorrilha/Projeto_PokeTrader">Projeto
+                <p>Link pro projeto: <a class="link-default"
+                        href="https://github.com/ThallesSorrilha/Projeto_PokeTrader">Projeto
                         PokéTrader</a>
                 </p>
             </div>
@@ -104,7 +122,7 @@
         </section>
 
         <!-- Projetos de Ensino e Extensão -->
-        <section class="teach_projects">
+        <section class="teach_projects" id="teach_projects">
             <h2>👨‍🏫 Projetos de Ensino</h2>
 
             <div class="card_project">
@@ -134,8 +152,8 @@
         </section>
 
         <!-- Habilidades -->
-        <section class="skills">
-            <h2>🛠️ Habilidades</h2>
+        <section class="skills" id="skills">
+            <h2>🛠️ Ferramentas e Linguagens de Programação</h2>
             <h3>Desktop 💻</h3>
             <img class="icon" src="img/icons/C.svg" alt="C">
             <img class="icon" src="img/icons/CPP.svg" alt="CPP">
@@ -175,23 +193,27 @@
         </section>
 
         <!-- Educação -->
-        <section class="education">
+        <section class="schooling" id="schooling">
             <h2>🏫 Formação</h2>
             <p>Ensino Médio Completo - IFPR Paranavaí (2022)</p>
             <p>Curso Técnico em Informática - IFPR Paranavaí (2022)</p>
             <p>Engenharia de Software - IFPR Paranavaí (cursando, 3/4 anos)</p>
         </section>
 
-        <section>
+        <section class="languages" id="languages">
             <h2>🦉 Línguas</h2>
             <p>Inglês: Compreendo muito bem, falo pouco.</p>
             <p>Espanhol: Compreendo muito bem, falo pouco.</p>
         </section>
 
+        <section class="api" id="api">
+            <h2>Estatísticas de Programação</h2>
+        </section>
+
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <p class="footer-description">© 2025. Portfólio desenvolvido sem fins lucrativos</p>
     </footer>
 </body>
 

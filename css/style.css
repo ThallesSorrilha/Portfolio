@@ -1,11 +1,19 @@
 @import url(variables.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  text-align: justify;
   background: var(--bg-color);
   color: var(--font-color);
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: justify;
-  margin: 14px;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0px;
+}
+
+main {
+  margin: 0px 14px 14px 14px;
 }
 
 p {
@@ -13,6 +21,7 @@ p {
   font-size: 18px;
   margin-top: 4px;
   margin-bottom: 0px;
+  font-weight: 400;
 }
 
 h6,
@@ -58,15 +67,15 @@ h2 {
   transition-duration: 0.4s;
 }
 
-.bi-github {
+.github {
   color: var(--github-color);
 }
 
-.bi-linkedin {
+.linkedin {
   color: var(--linkedin-color);
 }
 
-.bi-envelope-fill {
+.envelope-fill {
   color: var(--email-color);
 }
 
@@ -75,13 +84,13 @@ h2 {
   height: 48px;
 }
 
-a {
+.link-default {
   color: cornflowerblue;
 }
 
 .button {
   border: none;
-  padding: 2px 24px; /*2 30*/
+  padding: 2px 24px;
   size: 50px 78px;
   text-align: center;
   text-decoration: none;
@@ -89,7 +98,8 @@ a {
   transition-duration: 0.4s;
   cursor: pointer;
   background-color: var(--button-br);
-  border-radius: 12px; /*10px*/
+  border-radius: 12px;
+  min-height: 24px;
 }
 
 .button:hover {
@@ -160,4 +170,49 @@ a {
   font-size: 40px;
   margin-top: 4px;
   margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  background-color: #121212;
+  margin-bottom: 60px;
+}
+
+.footer-description {
+  margin: 14px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #1a1a1a;
+}
+
+.list {
+  margin: 0px;
+  padding: 10px 20px 10px 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  height: 38px;
+}
+
+.nav-icon {
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.avatar {
+  padding-top: 20px;
+}
+
+.nav-icon {
+  padding: 8px 16px;
+  color: #ffffff;
+  font-size: 32px;
 }
