@@ -1,5 +1,6 @@
 // Eventos para quando o botão claro/escuro for clicado
 
+// Traz valor de tema do localStorage
 document.addEventListener("DOMContentLoaded", () => {
   const localTheme = localStorage.getItem("theme");
   if (localTheme != null) {
@@ -7,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// Escuta botão de troca de tema
 document
   .getElementById("bt-change-theme")
   .addEventListener("click", changeTheme);
@@ -39,6 +41,7 @@ function updateTheme(theme) {
 
 // Funcionalidade da API do GitHub
 
+// GitHub - informções gerais
 async function fetchGitHubStats() {
   const username = "ThallesSorrilha";
   const url = `https://api.github.com/users/${username}`;
@@ -65,6 +68,7 @@ function displayGitHubStats(data) {
 
 fetchGitHubStats();
 
+// GitHub - repositórios
 async function fetchRepos() {
   const username = "ThallesSorrilha";
   const url = `https://api.github.com/users/${username}/repos`;

@@ -1,3 +1,4 @@
+/* Variáveis padrão */
 :root {
   --button-br: rgba(0, 0, 0, 0);
   --email-color: #d93025;
@@ -10,6 +11,7 @@
   --icon-active-color: #c9c9c9;
 }
 
+/* Variáveis p. tema escuro */
 [data-theme="dark"] {
   --bg-color: #313131;
   --font-color: #ffffff;
@@ -22,6 +24,7 @@
   --line-color: #cccccc;
 }
 
+/* Variáveis p. tema claro */
 [data-theme="light"] {
   --bg-color: #ededed;
   --font-color: #000000;

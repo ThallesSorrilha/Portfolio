@@ -1,5 +1,6 @@
 @import url(variables.css);
 
+/* Mobile First */
 html {
   scroll-behavior: smooth;
 }
@@ -178,7 +179,7 @@ h2 {
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 24px;
   background-color: var(--footer-color);
   margin-bottom: 60px;
 }
@@ -216,6 +217,7 @@ h2 {
 .avatar {
   padding-top: 20px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .bt-dark-light {
@@ -247,6 +249,7 @@ h2 {
   margin: 24px 0;
 }
 
+/* Para telas maiores, como a de tablet */
 @media screen and (min-width: 768px) {
   .img-card {
     max-height: 450px;
@@ -254,6 +257,7 @@ h2 {
   }
 }
 
+/* Para telas maiores, como a de desktop */
 @media screen and (min-width: 1200px) {
   .img-card {
     max-height: 500px;
@@ -261,6 +265,7 @@ h2 {
   }
 }
 
+/* Para quando a tela for maior na horizontal - paisagem */
 @media (orientation: landscape) {
   main {
     margin-left: 125px;
@@ -296,8 +301,4 @@ h2 {
     top: 32px;
     right: 32px;
   }
-}
-
-.avatar {
-  margin-bottom: 40px;
 }
