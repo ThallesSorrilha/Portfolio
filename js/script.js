@@ -1,9 +1,15 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+// Eventos para quando o botão claro/escuro for clicado
+
+document.addEventListener("DOMContentLoaded", () => {
   const localTheme = localStorage.getItem("theme");
   if (localTheme != null) {
     updateTheme(localTheme);
   }
 });
+
+document
+  .getElementById("bt-change-theme")
+  .addEventListener("click", changeTheme);
 
 function changeTheme() {
   const theme = document.body.getAttribute("data-theme");
@@ -30,6 +36,8 @@ function updateTheme(theme) {
   updateBody(theme);
   updateIcon(theme);
 }
+
+// Funcionalidade da API do GitHub
 
 async function fetchGitHubStats() {
   const username = "ThallesSorrilha";
