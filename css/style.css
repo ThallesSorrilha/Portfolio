@@ -206,15 +206,15 @@ h2 {
   height: 38px;
 }
 
-.avatar {
-  padding-top: 20px;
-}
-
 .nav-icon {
-  padding: 8px 16px;
+  padding: 8px 16px; /**/
   color: var(--p-color);
   font-size: 32px;
   transition-duration: 0.4s;
+}
+
+.avatar {
+  padding-top: 20px;
 }
 
 .bt-dark-light {
@@ -248,18 +248,47 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .img-card {
-    max-height: 600px;
-    max-width: 600px;
+    max-height: 450px;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .img-card {
+    max-height: 500px;
+    max-width: 500px;
+  }
+}
+
+@media (orientation: landscape) {
   main {
     margin-left: 125px;
     margin-right: 125px;
   }
   .bt-dark-light {
     right: 139px;
+  }
+  .header {
+    width: auto;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+  }
+  .nav-icon {
+    padding: 16px 8px;
+  }
+  .footer {
+    margin-bottom: 0px;
+  }
+  .line {
+    margin: 32px 0px 32px 0px;
   }
 }
 
