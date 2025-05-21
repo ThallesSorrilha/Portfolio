@@ -157,7 +157,7 @@ h2 {
 }
 
 .div-center {
-  display: flex;
+  display: grid;
   justify-content: center;
 }
 
@@ -215,6 +215,7 @@ h2 {
 
 .avatar {
   padding-top: 20px;
+  text-align: center;
 }
 
 .bt-dark-light {
@@ -292,7 +293,8 @@ h2 {
   }
   .bt-dark-light {
     position: fixed;
-    right: 20px;
+    top: 32px;
+    right: 32px;
   }
 }
 
