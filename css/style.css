@@ -290,6 +290,10 @@ h2 {
   .line {
     margin: 32px 0px 32px 0px;
   }
+  .bt-dark-light {
+    position: fixed;
+    right: 20px;
+  }
 }
 
 .avatar {
