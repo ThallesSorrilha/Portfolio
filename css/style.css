@@ -239,6 +239,13 @@ h2 {
   color: var(--bt-dark-light-details);
 }
 
+.line {
+  border: none;
+  height: 2px;
+  background: var(--line-color);
+  margin: 24px 0;
+}
+
 @media screen and (min-width: 768px) {
   .img-card {
     max-height: 600px;
