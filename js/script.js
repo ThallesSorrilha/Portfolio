@@ -1,4 +1,4 @@
-// Eventos para quando o botão claro/escuro for clicado
+/* Eventos para quando o botão claro/escuro for clicado */
 
 // Traz valor de tema do localStorage
 document.addEventListener("DOMContentLoaded", () => {
@@ -39,55 +39,52 @@ function updateTheme(theme) {
   updateIcon(theme);
 }
 
-// Funcionalidade da API do GitHub
+/* Funcionalidade da API do GitHub */
 
 // GitHub - informções gerais
-async function fetchGitHubStats() {
-  const username = "ThallesSorrilha";
+function searchGitHubStats(username) {
   const url = `https://api.github.com/users/${username}`;
-
   try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error("Erro ao buscar dados do GitHub");
-    }
-    const data = await response.json();
-    displayGitHubStats(data);
+    fetch(url)
+      .then((data) => data.json())
+      .then((data) => {
+        displayGitStats(data);
+      });
   } catch (error) {
-    console.error(error);
+    console.error("Erro ao buscar status: ", error);
   }
 }
-
-function displayGitHubStats(data) {
+// Exibir status do GitHub
+function displayGitStats(data) {
   const statsSection = document.getElementById("div-git-general");
   statsSection.innerHTML = `
       <p>Nome: ${data.name}</p>
       <p>Repositórios Públicos: ${data.public_repos}</p>
     `;
 }
-
-fetchGitHubStats();
+searchGitHubStats("ThallesSorrilha");
 
 // GitHub - repositórios
-async function fetchRepos() {
-  const username = "ThallesSorrilha";
+function searchGitRepos(username) {
   const url = `https://api.github.com/users/${username}/repos`;
-
   try {
-    const response = await fetch(url);
-    const repos = await response.json();
-    const reposList = repos
-      .map(
-        (repo) =>
-          `<li><a class="link-default" href="${repo.html_url}" target="_blank">${repo.name}</a></li>`
-      )
-      .join("");
-    document.getElementById(
-      "div-git-repos"
-    ).innerHTML += `<ul>${reposList}</ul>`;
+    fetch(url)
+    .then((data) => data.json())
+    .then((data) => {
+      displayGitRepos(data);
+    });
   } catch (error) {
-    console.error("Erro ao buscar repositórios:", error);
+    console.error("Erro ao buscar repositórios: ", error);
   }
 }
-
-fetchRepos();
+// Exibir repositórios
+function displayGitRepos(data) {
+  const reposList = data
+    .map(
+      (repo) =>
+        `<li><a class="link-default" href="${repo.html_url}" target="_blank">${repo.name}</a></li>`
+    )
+    .join("");
+  document.getElementById("div-git-repos").innerHTML += `<ul>${reposList}</ul>`;
+}
+searchGitRepos("ThallesSorrilha");

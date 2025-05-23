@@ -182,6 +182,7 @@ h2 {
   margin-top: 24px;
   background-color: var(--footer-color);
   margin-bottom: 60px;
+  transition-duration: 0.4s;
 }
 
 .footer-description {
