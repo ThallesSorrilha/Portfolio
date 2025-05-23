@@ -69,10 +69,10 @@ function searchGitRepos(username) {
   const url = `https://api.github.com/users/${username}/repos`;
   try {
     fetch(url)
-    .then((data) => data.json())
-    .then((data) => {
-      displayGitRepos(data);
-    });
+      .then((data) => data.json())
+      .then((data) => {
+        displayGitRepos(data);
+      });
   } catch (error) {
     console.error("Erro ao buscar repositórios: ", error);
   }
