@@ -56,11 +56,13 @@ function searchGitHubStats(username) {
 }
 // Exibir status do GitHub
 function displayGitStats(data) {
-  const statsSection = document.getElementById("div-git-general");
-  statsSection.innerHTML = `
-      <p>Nome: ${data.name}</p>
-      <p>Repositórios Públicos: ${data.public_repos}</p>
-    `;
+  const generalContainer = document.getElementById("div-git-general");
+  const name = document.createElement("p");
+  const pubRepos = document.createElement("p");
+  name.textContent = "Nome: " + data.name;
+  pubRepos.textContent = "Repositórios Públicos: " + data.public_repos;
+  generalContainer.appendChild(name);
+  generalContainer.appendChild(pubRepos);
 }
 searchGitHubStats("ThallesSorrilha");
 
@@ -79,12 +81,18 @@ function searchGitRepos(username) {
 }
 // Exibir repositórios
 function displayGitRepos(data) {
-  const reposList = data
-    .map(
-      (repo) =>
-        `<li><a class="link-default" href="${repo.html_url}" target="_blank">${repo.name}</a></li>`
-    )
-    .join("");
-  document.getElementById("div-git-repos").innerHTML += `<ul>${reposList}</ul>`;
+  const reposContainer = document.getElementById("div-git-repos");
+  const ul = document.createElement("ul");
+  data.forEach((repo) => {
+    const listItem = document.createElement("li");
+    const link = document.createElement("a");
+    link.classList.add("link-default");
+    link.href = repo.html_url;
+    link.target = "_blank";
+    link.textContent = repo.name;
+    listItem.appendChild(link);
+    ul.appendChild(listItem);
+  });
+  reposContainer.appendChild(ul);
 }
 searchGitRepos("ThallesSorrilha");
